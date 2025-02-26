@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -22,8 +22,9 @@ requirements:
     - versioneer
   run:
     - python >={{ python_min }}
-    - numpy >=1.26.4, <=2.2.0
-    - ase =3.23.0
+    - numpy >=1.26.4, <=2.2.3
+    - ase >=3.23.0, <=3.24.0
+    - h5py >=3.6.0,<=3.13.0
 
 test:
   imports:
