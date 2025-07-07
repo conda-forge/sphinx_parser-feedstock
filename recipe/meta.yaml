@@ -1,5 +1,6 @@
 {% set name = "sphinx_parser" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b99ef1d2c07401936e196e25d03104a3292acc378ea2938b4463fef623b72bdf
+  sha256: 3f445ba316b408d1d76e99a669e8b776e03d3ad71b31c7039599c0694cf99fb6
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
 
 requirements:
   host:
@@ -22,9 +23,11 @@ requirements:
     - versioneer
   run:
     - python >={{ python_min }}
-    - numpy >=1.26.4, <=2.2.4
-    - ase >=3.23.0, <=3.25.0
-    - h5py >=3.6.0,<=3.13.0
+    - numpy >=1.26.4,<2.4.0
+    - ase >=3.23.0,<3.26.0
+    - h5py >=3.6.0,<3.15.0
+    - semantikon >=0.0.17,<0.0.21
+    - pint >=0.23,<0.24.5
 
 test:
   imports:

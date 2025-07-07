@@ -34,7 +34,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-sphinx_parser-green.svg)](https://anaconda.org/conda-forge/sphinx_parser) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sphinx_parser.svg)](https://anaconda.org/conda-forge/sphinx_parser) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sphinx_parser.svg)](https://anaconda.org/conda-forge/sphinx_parser) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sphinx_parser.svg)](https://anaconda.org/conda-forge/sphinx_parser) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-sphinx__parser-green.svg)](https://anaconda.org/conda-forge/sphinx_parser) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sphinx_parser.svg)](https://anaconda.org/conda-forge/sphinx_parser) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sphinx_parser.svg)](https://anaconda.org/conda-forge/sphinx_parser) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sphinx_parser.svg)](https://anaconda.org/conda-forge/sphinx_parser) |
 
 Installing sphinx_parser
 ========================
