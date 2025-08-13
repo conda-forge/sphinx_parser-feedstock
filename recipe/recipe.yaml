@@ -14,13 +14,13 @@ source:
   sha256: 699801ad2b1eba8f30e62e04bd91bf09d6c7e794ff84ec6a8a4ee01254f28c53
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python 3.10.*
+    - python ${{ python_min }}.*
     - pip
     - setuptools
     - versioneer
@@ -37,8 +37,8 @@ tests:
       imports:
         - sphinx_parser
       pip_check: true
-
       python_version: ${{ python_min }}.*
+
 about:
   summary: Parser for the DFT program SPHInX
   description: |
