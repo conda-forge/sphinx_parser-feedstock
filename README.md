@@ -15,7 +15,6 @@ Documentation: https://sphinx_parser.readthedocs.io/
 
 sphinx_parser is the python input and output parser of the DFT code SPHInX
 
-
 Current build status
 ====================
 
