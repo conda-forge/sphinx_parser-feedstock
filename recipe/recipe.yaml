@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sphinx_parser
-  version: "0.1.0"
+  version: "0.1.1"
   python_min: '3.10'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 19a0fb45671fc011e1b0b8f192b6691419a1e3b394bfdac2fb1aaa2a3cf5782f
+  sha256: 1fad45fe831ffdff95cc9c6092f68ac98cc076d33a218efeec052bcbf3bb6447
 
 build:
   number: 0
