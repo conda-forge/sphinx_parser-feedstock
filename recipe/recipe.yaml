@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sphinx_parser
-  version: "0.1.7"
+  version: "0.1.9"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 4e9ee107809a08e9150edb64be845683c0ac98e46cc05117618c6721bb178937
+  sha256: 19b9a23f3d635acf756bd97c5668546b58770603f646db073e3422503603d7c8
 
 build:
   number: 0
@@ -21,15 +21,15 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - setuptools
-    - versioneer
+    - hatchling
+    - hatch-vcs
   run:
     - python >=${{ python_min }}
     - numpy >=1.26.4,<2.5.0
     - ase >=3.23.0,<3.29.0
-    - h5py >=3.6.0,<3.19.0
-    - semantikon >=0.0.17,<1.1.0
-    - pint >=0.23,<0.26
+    - h5py >=3.6.0,<3.17.0
+    - semantikon >=0.0.17,<1.2.0
+    - pint >=0.23,<0.25.3
     - pyyaml >=5.4.1,<6.1.0
 
 tests:
