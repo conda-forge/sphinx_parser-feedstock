@@ -13,7 +13,7 @@ source:
   sha256: 19b9a23f3d635acf756bd97c5668546b58770603f646db073e3422503603d7c8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -26,7 +26,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - numpy >=1.26.4,<2.5.0
-    - ase >=3.23.0,<3.29.0
+    - ase >=3.23.0,<3.30.0
     - h5py >=3.6.0,<3.17.0
     - semantikon >=0.0.17,<1.2.0
     - pint >=0.23,<0.25.3
