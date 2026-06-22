@@ -11,6 +11,8 @@ package:
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
   sha256: 19b9a23f3d635acf756bd97c5668546b58770603f646db073e3422503603d7c8
+  patches:
+    - ase.patch
 
 build:
   number: 1
