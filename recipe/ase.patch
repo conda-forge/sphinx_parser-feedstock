@@ -1,14 +1,14 @@
-From ad0063a0542d94cb230145d47d826f27217f6282 Mon Sep 17 00:00:00 2001
+From 32d881ea8bc5f99f343cfc7969ea01ee74fd6731 Mon Sep 17 00:00:00 2001
 From: Jan Janssen <janssen@mpie.de>
-Date: Mon, 22 Jun 2026 11:14:32 +0200
-Subject: [PATCH] fix ase
+Date: Tue, 23 Jun 2026 23:22:13 +0200
+Subject: [PATCH] fix
 
 ---
  pyproject.toml | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/pyproject.toml b/pyproject.toml
-index c3b9f37..08cf3d8 100644
+index c3b9f37..e504140 100644
 --- a/pyproject.toml
 +++ b/pyproject.toml
 @@ -9,7 +9,7 @@ readme = "docs/README.md"
@@ -16,7 +16,7 @@ index c3b9f37..08cf3d8 100644
  requires-python = ">=3.9, <3.15"
  classifiers = [ "Development Status :: 3 - Alpha", "Topic :: Scientific/Engineering", "License :: OSI Approved :: BSD License", "Intended Audience :: Science/Research", "Operating System :: OS Independent", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14",]
 -dependencies = [ "numpy>=1.26.4,<2.5.0", "ase>=3.23.0,<3.29.0", "h5py>=3.6.0,<3.17.0", "semantikon>=0.0.17,<1.2.0", "pint>=0.23,<=0.25.3", "pyyaml>=5.4.1,<6.1.0",]
-+dependencies = [ "numpy>=1.26.4,<2.5.0", "ase>=3.23.0,<3.30.0", "h5py>=3.6.0,<3.17.0", "semantikon>=0.0.17,<1.2.0", "pint>=0.23,<=0.25.3", "pyyaml>=5.4.1,<6.1.0",]
++dependencies = [ "numpy>=1.26.4,<2.5.0", "ase>=3.23.0,<3.30.0", "h5py>=3.6.0,<3.17.0", "semantikon>=0.0.17,<1.4.0", "pint>=0.23,<=0.25.3", "pyyaml>=5.4.1,<6.1.0",]
  dynamic = [ "version",]
  [[project.authors]]
  name = "Sam Waseda"
