@@ -15,7 +15,7 @@ source:
     - ase.patch
 
 build:
-  number: 2
+  number: 3
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -30,7 +30,7 @@ requirements:
     - numpy >=1.26.4,<2.5.0
     - ase >=3.23.0,<3.30.0
     - h5py >=3.6.0,<3.17.0
-    - semantikon >=0.0.17,<1.2.0
+    - semantikon >=0.0.17,<1.4.0
     - pint >=0.23,<0.25.3
     - pyyaml >=5.4.1,<6.1.0
     - typing_extensions  # ase requires it
